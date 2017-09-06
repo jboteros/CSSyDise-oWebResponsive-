@@ -1,3 +1,3 @@
 # CSSyDisenoWebResponsive
 
-Evaluatión CSS y Diseno Web Responsive - Next U Johnatan Botero
+Evaluatión CSS y Diseño Web Responsive - Next U Johnatan Botero
