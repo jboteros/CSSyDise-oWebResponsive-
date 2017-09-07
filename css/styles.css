@@ -13,41 +13,39 @@ nav {
   background-color: blue;
 }
 
-content {
-  background-color: blue;
+article {
+  background-color: #d5c75f;
 }
 
-.containerFooter div {
-  padding: 15px 15px 15px 15px;
-  background-color: rgba(200, 100, 10, 0.5);
-  border: 2px solid #73AD21;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.c1 {
-  color: black;
+li {
+  float: left;
 }
 
-.c2 {
-  color: black;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.c3 {
-  color: black;
+li a:hover {
+  background-color: #111;
 }
 
-.c4 {
-  color: black;
-}
-
-.containerFooter {
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: column wrap;
-}
 
 footer {
   background-color: #C6d5c5;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
+
 }
 
 body {
@@ -63,11 +61,27 @@ body {
     width: 900px;
     margin: auto;
   }
-  .c1 .c2 .c3 .c4 {
-    width: 25%;
+
+  #gallery  img {
+      width: 50%;
+      height: auto;
+      float: left;
+      padding: 20px 20px 20px 20px;
   }
+
+  .image-menu {
+      padding: 0 6px;
+      float: left;
+      width: 100%;
+  }
+
 }
 
+@media only screen and (max-width: 900px){
+    .responsive {
+        width: 100%;
+    }
+}
 
 /* Mobile */
 
@@ -75,7 +89,87 @@ body {
   #contenido {
     width: 100%;
   }
-  .c1 .c2 .c3 .c4 {
-    flex-wrap: wrap;
+
+  #gallery  img {
+      width: 100%;
+      height: auto;
+      float: left;
+      padding: 20px 20px 20px 20px;
   }
+
+  .image-menu {
+      padding: 0 6px;
+      float: left;
+      width: 100%;
+
+  }
+}
+
+
+#slider  img {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+#slider {
+  background-color: #82c3a6;
+}
+
+
+#gallery{
+box-sizing: border-box;
+margin: 0 auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.colum-footer img {
+    width: 100%;
+    height: auto;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+div.images-menu img {
+    width: 100%;
+    height: auto;
+
+}
+
+div.description-menu {
+    padding: 15px;
+    text-align: center;
+    display: table;
+    clear: both;
+}
+
+
+
+.image-menu {
+    padding: 0 6px;
+
 }
